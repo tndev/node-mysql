@@ -740,6 +740,23 @@ connection.query(options, function(err, results) {
   */
 });
 ```
+## Update shortcut
+A shortcut for updating table rows:
+
+```js
+connection.update('posts',{title:'New title'}, 'ID=?', function( err, result ) {
+
+});
+```
+
+## Insert shortcut
+A shortcut for updating table rows:
+
+```js
+connection.insert('posts',{title:'Title'}, function( err, result ) {
+
+});
+```
 
 ## Transactions
 
